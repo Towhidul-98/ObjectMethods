@@ -28,8 +28,8 @@ const helpfulPerson = {
 //console.log(normalPerson.getFullName());
 //console.log(normalPerson.tax(500));
 
-// normalPerson.tax(500);
-// console.log(normalPerson.salary)
+normalPerson.tax(500);
+console.log(normalPerson.salary)
 
 const helpfulPersonTax = normalPerson.tax.bind(helpfulPerson);
 helpfulPersonTax(1000);
