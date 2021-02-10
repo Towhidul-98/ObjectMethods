@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick = 'this.innerText ="I AM CLICKED"'>Use Of This Keyword</h1>
+    <script>
+        const myObj = {
+            name : "Kamrul Hasan",
+            fullName : function(){
+                //console.log(this)
+                return "Mr. " + this.name ;
+            }       
+        }
+    
+        console.log(myObj.fullName());
+        const anotherObj = {
+            name :"galib",
+        }
+        anotherObj.fullName = myObj.fullName;
+        console.log(anotherObj)
+        console.log(anotherObj.fullName())
+    </script>
+</body>
+</html>
